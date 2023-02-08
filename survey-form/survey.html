@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the form below to give us your feedback.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name here">
+      <br>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email here">
+      <br>
+      <label for="number" id="number-label">Phone Number:</label>
+      <input type="number" id="number" min="0" max="9999999999" placeholder="Enter your phone number here">
+      <br>
+      <label for="dropdown" id="dropdown-label">How did you hear about us?</label>
+      <select id="dropdown">
+        <option value="google">Google</option>
+        <option value="friend">Friend</option>
+      </select>
+      <br>
+      <p>What type of feedback are you providing?</p>
+      <input type="radio" id="suggestion" name="feedback" value="suggestion">
+      <label for="suggestion">Suggestion</label>
+      <br>
+      <input type="radio" id="complaint" name="feedback" value="complaint">
+      <label for="complaint">Complaint</label>
+      <br>
+      <p>Would you like to receive updates from us in the future?</p>
+      <input type="checkbox" id="updates" value="yes">
+      <label for="updates">Yes</label>
+      <br>
+      <p>Additional comments:</p>
+      <textarea id="comments"></textarea>
+      <br>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
